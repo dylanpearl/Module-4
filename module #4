@@ -1,0 +1,30 @@
+1. Creating the data
+> Freq <- c(0.6, 0.3, 0.4, 0.4, 0.2, 0.6, 0.3, 0.4, 0.9, 0.2)
+> bloodp <- c(103, 87, 32, 42, 59, 109, 78, 205, 135, 176)
+> first <- c(1, 1, 1, 1, 0, 0, 0, 0, NA, 1)  
+> second <- c(0, 0, 1, 1, 0, 0, 1, 1, 1, 1)
+> finaldecision <- c(0, 1, 0, 1, 0, 1, 0, 1, 1, 1)
+
+> data <- data.frame(Freq, bloodp, first, second, finaldecision)
+
+
+
+A. Boxplot
+> A <- c(3, 2, 5, 6, 4, 8, 1, 2, 3, 2, 4)
+
+> boxplot(A,
++         main = "Boxplot of Data Container A",
++         ylab = "Values",
++         col = "lightblue",
++         border = "black")
+
+B. Histogram
+> B <- c(2, 4, 5, 7, 12, 14, 16)
+
+> hist(B,
++      main = "Histogram of Data Container B",
++      xlab = "Values",
++      ylab = "Frequency",
++      col = "lightblue",
++      border = "black",
++      breaks = 5)  
